@@ -3,7 +3,8 @@ hello-world
 
 My first repository on GitHub.
 
-编程语言：python 2.7
-功能：基于某开源写的后台服务
-用途：IM聊天
-目的：只是为了锻炼自己一个人架设后台服务的能力
+姓名：严建龙
+email: yanjianlong@126.com
+技能：
+  1.大二到毕业工作前一年 windows c++开发，工作主要做地图引擎
+  2.目前主要做IM后台服务，linux c++ python 
