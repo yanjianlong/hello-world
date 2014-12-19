@@ -5,6 +5,8 @@
 class ICommonProcess
 {
 public:
+	ICommonProcess() { cout << "ICommonProcess create" << endl;}
+	virtual ~ICommonProcess() { cout << "ICommonProcess delete" <<endl;}
 	virtual void SuccessProcess() = 0;
 	virtual void ErrorProcess() = 0;
 	virtual void LoginInfo(const string& function_name,

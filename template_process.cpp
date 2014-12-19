@@ -1,6 +1,6 @@
 #include "template_process.h"
 CProcess::CProcess()
-	: m_process(NULL)
+	: m_process_(NULL)
 {
 	cout << "CProcess create" << endl;
 }
@@ -8,43 +8,36 @@ CProcess::CProcess()
 CProcess::~CProcess()
 {
 	cout << "CProcess delete" << endl;
+	if(NULL != m_process_)
+	{
+		delete m_process_;
+	}
+	m_process_ = NULL;
 }
 
 void CProcess::SetCommonProcess(ICommonProcess* process)
 {
-	m_process = process;
+	m_process_ = process;
 }
-
-void CProcess::CommonLog(const string& function_name, 
-				const string& addinfo)
-{
-	if (NULL == m_process)
-	{
-		cout << "CProcess::CommonLog m_process empty" << endl;
-		return;
-	}
-	m_process->LoginInfo(function_name, function_name);
-}
-
 void CProcess::SuccessProcess(const string& function_name, 
 				const string& addinfo)
 {
 	CommonLog(function_name, function_name);
-	if (NULL == m_process)
+	if (NULL == m_process_)
 	{
-		cout << "CProcess::SuccessProcess m_process empty" << endl;
+		cout << "CProcess::SuccessProcess m_process_ empty" << endl;
 		return;
 	}
-	m_process->SuccessProcess();
+	m_process_->SuccessProcess();
 }
 void CProcess::ErrorPrrocess(const string& function_name, 
 				const string& addinfo)
 {
 	CommonLog(function_name, function_name);
-	if (NULL == m_process)
+	if (NULL == m_process_)
 	{
-		cout << "CProcess::ErrorPrrocess m_process empty" << endl;
+		cout << "CProcess::ErrorPrrocess m_process_ empty" << endl;
 		return;
 	}
-	m_process->ErrorProcess();
+	m_process_->ErrorProcess();
 }
