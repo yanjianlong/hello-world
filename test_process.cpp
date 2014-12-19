@@ -16,6 +16,8 @@ CTestProcess::~CTestProcess()
 void CTestProcess::Process()
 {
 	cout << "CTestProcess::Process" << endl;
+	SuccessProcess("SuccessProcess", "success");
+	ErrorPrrocess("ErrorPrrocess", "error");
 }
 
 void CTestProcess::CommonLog(const string& function_name, 
