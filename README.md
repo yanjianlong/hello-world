@@ -8,6 +8,7 @@ My first repository on GitHub.
 email: yanjianlong@126.com.
 
 技能：
+
 1：熟练掌握C/C++（3年使用时间）、熟悉python开发、熟悉linux epoll, 对于one loop one thread有所体会，熟悉redis的数据结构和基本原理。
 
 2: http://www.github.com/yanjianlong在闲暇时间的代码整理，和对编程的认识。
