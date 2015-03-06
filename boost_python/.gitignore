@@ -1,0 +1,10 @@
+CMakeFiles/
+*.pyc
+*.a
+*.so
+Makefile
+CMakeCache.txt
+exposed_decl.pypp.txt
+named_tuple.py
+main
+cmake_install.cmake
