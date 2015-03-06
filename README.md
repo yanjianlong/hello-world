@@ -3,7 +3,7 @@ hello-world
 
 My first repository on GitHub.
 
-姓名：严建龙.
+姓名：捡龙眼.
 
 email: yanjianlong@126.com.
 
@@ -17,5 +17,7 @@ MyReactorCode：是我对于linux epoll模型的理解，反应堆的设计和�
 
 HellowCPP：是对于地图插件的部分功能再现。
 
-my_server(python) hello-word(c/c++)：目前想到的改善程序的一种解决方案。
+my_server(python):分布式服务器
+
+hello_world:一些技巧
 
