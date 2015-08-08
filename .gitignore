@@ -1,4 +1,6 @@
 bin/
 obj/
 log/
-
+*.pyc
+script/.idea
+.idea
